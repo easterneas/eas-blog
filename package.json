@@ -1,0 +1,11 @@
+{
+  "name": "eas-blog",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev:web": "bun --filter @eas/blog dev",
+    "dev:cms": "bun --filter eas-hcms develop",
+    "build:web": "bun --filter @eas/blog build",
+    "build:cms": "bun --filter eas-hcms build"
+  }
+}
